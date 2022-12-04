@@ -7,7 +7,7 @@ body{
 }
 .container{
     box-sizing: border-box;
-    width: 1023px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -16,20 +16,26 @@ header {
     display: block;
     position: relative;
     min-height: 200px;
-    width: 100vw;
+    width: 100%;
     z-index:3;
     
 }
  .nav {
    
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     position:fixed;
     background-color: rgb(34, 30, 30);
-    width: 100vw;
+    width: 100%;
     height: 40px;
     z-index: 5;
+ }
+ .menu{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 0;
+ }
+ .menu_link{
+    list-style-type: none;
  }
 
  .nav_link{
@@ -45,22 +51,25 @@ header {
     
     color: rgb(218, 136, 13);
  }
-header .logo{
-    
+
+ .logo{
+    width: 100%;
+    background-color: rgba(24, 23, 23, 0.6);
+    padding-top:30px;
+    min-height: 150px;
+}
+.logo_wrapper{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-height: 150px;
-    padding: 25px 30px 0;
-    background-color: rgba(24, 23, 23, 0.6);
-   
-
+    padding: 30px 0 0;
 }
-header .logo_img{
+.logo_img{
     height: 115px;
     
 }
-header .logo_text{
+.logo_text{
    
     display: inline-block;
     font-size: 28px;
@@ -74,14 +83,17 @@ header .logo_text{
     position: absolute;
     top:40px;
     padding: 1050px auto;
+   
+    min-height: 200px;
+    width: 100%;
+    background: url(../content/bg/bgstart1.jpeg) center center/cover no-repeat;
+}
+.first_scr_wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
-    min-height: 200px;
-    width: 100%;
-    background: url(../content/bg/bgstart1.jpeg) center center/cover no-repeat;
+    padding-top: 150px;
 }
 
 .main_header{
@@ -90,12 +102,10 @@ header .logo_text{
     font-size: 20px;
     display: inline-block;
     background-color:rgba(38, 42, 65, 0.8);
-    position: relative;
-    bottom: 122px;
+   
 }
 .main_img{
     display: inline-block;
-    padding-top: 150px;
     height: 220px;
     width: 220px;
 }
@@ -133,8 +143,8 @@ color: rgba(38, 42, 65, 0.9);
 .about{
     display:block;
     width: 100%;
-    margin: 300px auto 0 auto;
-    padding-top:20px;
+    margin: 210px auto 0 auto;
+    padding-top:40px;
     background: url(../content/bg/terms_bg.jpg) center center/cover no-repeat;
  
 }
@@ -146,7 +156,7 @@ color: rgba(38, 42, 65, 0.9);
 .education{
     background: url(../content/bg/bgedu1.png) center center/cover no-repeat;
     padding: 50px 0;
-    
+    width: 100%;
 }
 .first_wrapper{
     display:flex;
@@ -221,6 +231,7 @@ color: rgba(38, 42, 65, 0.9);
     min-height: 150px;
     background-color:rgba(38, 42, 65, 0.85);
     padding: 40px 0;
+    width:100%;
  }
 
  .work_list{
@@ -244,6 +255,7 @@ color: rgba(38, 42, 65, 0.9);
     margin: 0 auto;
     padding: 30px 0;
     background: url(../content/bg/terms_bg.jpg) center center/cover no-repeat;
+    width: 100%;
  }
 
  .interests blockquote{
@@ -294,6 +306,7 @@ color: rgba(38, 42, 65, 0.9);
     border-radius: 5px;
 
     margin-top: 30px;
+    padding: 5px;
  }
 
  .interests_item .interests_subheader{
@@ -303,20 +316,22 @@ color: rgba(38, 42, 65, 0.9);
     text-align: center;
 
  }
-.interest_item .interests_text{
-
+ .interests_item .interests_text{
+color:white;
+font-weight: 400;
 }
 
 .devway{
     color: rgba(38, 42, 65, 0.85);
     font-size: 16px;
     line-height: 21px;
+    width: 100%;
 
 }
 
 .devway_list{
     list-style: none;
-    margin: 30px auto;
+    margin: 30px;
     padding:0;
     
 }
@@ -336,7 +351,7 @@ color: rgba(38, 42, 65, 0.9);
 footer{
     background-color: rgb(12, 12, 12);
     padding-top: 10px;
-    width: 100vw;
+    width: 100%;
 }
 .footer_wrapper{
     
