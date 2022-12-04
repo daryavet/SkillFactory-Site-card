@@ -12,12 +12,12 @@ body{
 }
 
 header {
+
     display: block;
     position: relative;
     min-height: 200px;
+    width: 100vw;
     z-index:3;
-
-
     
 }
  .nav {
@@ -50,8 +50,8 @@ header .logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-height: 180px;
-    padding: 0 30px;
+    min-height: 150px;
+    padding: 25px 30px 0;
     background-color: rgba(24, 23, 23, 0.6);
    
 
@@ -61,6 +61,7 @@ header .logo_img{
     
 }
 header .logo_text{
+   
     display: inline-block;
     font-size: 28px;
     color:rgb(226, 177, 14);
@@ -73,25 +74,30 @@ header .logo_text{
     position: absolute;
     top:40px;
     padding: 1050px auto;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
     min-height: 200px;
     width: 100%;
     background: url(../content/bg/bgstart1.jpeg) center center/cover no-repeat;
 }
 
 .main_header{
-    display: inline-block;
-    font-size: 20px;
+    font-family: 'El Messiri';
     font-weight: 700;
-    color: rgb(245, 240, 240);
+    font-size: 20px;
+    display: inline-block;
     background-color:rgba(38, 42, 65, 0.8);
     position: relative;
     bottom: 122px;
 }
 .main_img{
     display: inline-block;
-    padding-top: 180px;
+    padding-top: 150px;
+    height: 220px;
+    width: 220px;
 }
 
 .subheader_lable{
@@ -104,30 +110,38 @@ header .logo_text{
     border-radius: 5px;
     border: solid black;
     background-color: rgba(38, 42, 65, 0.85);
-
-    color: whitesmoke; 
-    font-size: 12px;
-    font-weight: 700;
-    text-align: center;
-    
 }
 .subheader_lable_white{
 background-color: whitesmoke;
 color: rgba(38, 42, 65, 0.9);
 }
+.subheader_lable_text{
+    font-family: 'El Messiri';
+    font-weight: 700;
+    color: whitesmoke; 
+    font-size: 16px; 
+    text-align: center;
+}
+.subheader_lable_text_white{
+    color: rgba(38, 42, 65, 0.85);
+}
+   
+    
+
+
 
 .about{
     display:block;
     width: 100%;
-    margin: 350px auto 0 auto;
-    padding-top:60px;
+    margin: 300px auto 0 auto;
+    padding-top:20px;
     background: url(../content/bg/terms_bg.jpg) center center/cover no-repeat;
  
 }
 .about p{
     font-size: 18px;
-    font-weight: 400;
-    padding: 30px 20px;
+    font-weight: 600;
+    padding: 30px 195px;
 }
 .education{
     background: url(../content/bg/bgedu1.png) center center/cover no-repeat;
@@ -236,7 +250,7 @@ color: rgba(38, 42, 65, 0.9);
     position: relative;
     right: 215px;
     margin: 30px auto;
-    width: 330px;
+    width: 320px;
     height: 72px;
     background-color:rgba(38, 42, 65, 0.8);
     border: none;
@@ -244,7 +258,7 @@ color: rgba(38, 42, 65, 0.9);
     text-align: center;
 
     color:whitesmoke;
-    font: size 14px;
+    font-size 14px;
     font-weight: 400;
  }
  .interests .interests_descr{
@@ -304,21 +318,20 @@ color: rgba(38, 42, 65, 0.9);
     list-style: none;
     margin: 30px auto;
     padding:0;
-    text-align: center;
     
 }
 .devway_list li{
     background-color: rgba(218, 136, 13, 0.7);
     margin-top: 10px;
+    font-weight: 600;
 }
 .devway_list li:before{
     content: '';
     display: inline-block;
-
-
     width: 21px ;
     height: 20px;
     background: url('../content/icons/icon_star.svg') center center / cover no-repeat;
+    
 }
 footer{
     background-color: rgb(12, 12, 12);
@@ -331,10 +344,16 @@ footer{
    
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
 
     color:rgb(218, 136, 13);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.footer_item_wrapper{
+    padding-right: 40px;
 }
 .footer_line{
     display:block;
@@ -345,10 +364,14 @@ footer{
     
 }
 
-.footer_item_wrapper{
-    margin-right: 40px;
+.footer_phone{
+    text-decoration: none;
+    color: rgb(218, 136, 13);
+    transition: 0,8s all;
 }
-
+.footer_phone:hover{
+   color:antiquewhite;
+}
 .social_img{
     height: 35px;
 }
